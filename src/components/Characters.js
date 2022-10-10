@@ -20,8 +20,11 @@ const Characters = () => {
   
   
   return (
-    <div>
-      {data.results.map(character => <Character key={character.id} character={character}></Character>)}
+    <div className='container'>
+      <h1>Rick and Morty</h1>
+      <div className='characters'>
+        {data.results.map(character => <Character key={character.id} character={character}></Character>)}
+      </div>
     </div>
   );
 };
